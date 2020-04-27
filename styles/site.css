@@ -1,20 +1,20 @@
-@font-face {
-	font-family: "Open Sans";
-	src: url('../fonts/OpenSans.ttf');
+@font-face {          /*устойчивая конструкция для подключения шрифтов*/
+	font-family: "Open Sans"; /*Тут указываем свободное название подключаемого шрифта*/
+	src: url('../fonts/OpenSans.ttf');  /*Указыввем относительный пусть до папки со шрифтом.Для подключения шрифта необходимо предварительно создать папку fonts и туда  поожить заранее скачанный файл шрифта*/
 }
 body, html{
-	padding: 0;
-	margin: 0;
-	font-family: "Open Sans", sans-serif;
+	padding: 0; /*Внутрненние отступы*/
+	margin: 0;  /*Внешние отступы*/
+	font-family: "Open Sans", sans-serif; /*font-family - определяет то , какой шрифт будет задействован в данном блоке , a sans-serif -  запасной , на случай если по какой то причине  основной шрифт не загрузится*/
 	color: #5e5e5e;
 }
 header {
-	width: 100%;
-	height: 50px;
-	padding: 10px 0;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	width: 100%; /*Ширина блока*/
+	height: 50px; /*Высота бюлока*/
+	padding: 10px 0; /*Внутренние верхний и нижний отступы будут равны 10пикселям , а правый и левый будут отсутствовать = 0*/
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*Тут задается нижняя граница(полоска) для элемента с толщиной в 1пиксель сплошная заданного цвета rgb  а значение 0.1  это прозрачноасть*/ 
 	background: url('../images/promo.jpg') no-repeat;
-	background-size: cover;  
+	background-size: cover; /*Определяет размер фона. Но свойство Cover - означает то что фон будет приспосабливаться к размерам блока к которому фон применяется*/ 
 }
 #headerInside {
 	width: 1100px;
